@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day6</title>
+    <link rel="stylesheet" href="style5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-form">
+        <div class="fx-form">
+            <h1 class="job">Job Application Form</h1>
+            <form action="" method="post">
+                <label for="name"><strong>Full Name:</strong></label>
+                <input type="text" placeholder="Enter your name" required class="input-t">
+                <label for="name" class="l-2"><strong>Email:</strong></label>
+                <input type="email" placeholder="Enter your email" required class="input-t">
+                <label for="Position" class="l-3"><strong>Position:</strong></label>
+                <input list="positions" name="position" id="Position" class="input-t"
+                    placeholder="Select or type a position">
+                <datalist id="positions">
+                    <option value="Developer">
+                    <option value="Designer">
+                    <option value="Tester">
+                    <option value="Manager">
+                </datalist>
+                <fieldset class="avai">
+                    <legend class="legend1">Availability:</legend>
+                    <div class="option">
+                        <input type="radio" id="full" class="big" name="Availability">
+                        <label for="full">Full time</label>
+                         <input type="radio" id="part" class="big" name="Availability">
+                        <label for="part">Part time</label>
+                    </div>
+                </fieldset>
+                <label for="" class="lb-footer">Why do you want this job?</label>
+                <textarea name="comments" id="comments" rows="10" cols="120"></textarea>
+                <button class="submit">Submit Application</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
