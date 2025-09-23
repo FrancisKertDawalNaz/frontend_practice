@@ -1,0 +1,66 @@
+body {
+    padding: 50px;
+    font-family: 'poppins', sans-serif;
+}
+
+.todo-card {
+    width: 300px;
+    background-color: rgb(236, 243, 241);
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 5px 5px 10px rgb(151, 108, 58);
+}
+
+.todo-card,
+h1 {
+    text-align: center;
+    color: rgb(59, 45, 45);
+}
+
+.row1, .row2{
+    background-color: rgb(199, 230, 227);
+    height: 100px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    gap: 10px;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.main1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 10px;
+}
+
+.t1 {
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.list-groups{
+    padding-right: 50%;
+}
+
+.list-groups li a{
+    text-decoration: none;
+    font-size: small;
+    color: blue;
+}
+
+.list-row2{
+    padding-right: 37%;
+    font-size: small;
+}
+
+.list-row2 li a{
+    text-decoration: none;
+    color: blue;
+}
