@@ -1,0 +1,38 @@
+body{
+    padding: 100px;
+    font-family:'Poppins', Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.main1{
+ text-align: center;
+}
+
+.main1 .p1{
+    font-weight: normal;
+}
+
+hr{
+    width: 800px;
+    height: 3px;
+    background-color: black;
+    margin-top: 50px;
+}
+
+.main2{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.foot{
+    margin-top: 100px;
+}
+
+.footers{
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
