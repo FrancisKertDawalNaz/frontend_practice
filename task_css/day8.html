@@ -24,22 +24,45 @@
                 <input type="email" required class="white">
                 <label for="password">Create a New Password:</label>
                 <input type="password" required class="white">
+                <hr>
+                <span>Account type (required)</span>
+                <div class="account_type">
+                    <label for="personal">
+                        <input type="radio" name="availability" id="Personal" class="personal" required>
+                        Personal
+                    </label>
+
+                    <label for="business">
+                        <input type="radio" name="availability" id="Business" class="business" required>
+                        Business
+                    </label>
+                </div>
+                <hr>
+                <div class="section2">
+                    <label for="picture">Upload a profile picture:</label>
+                    <input type="file" id="picture" name="picture" required>
+                    <label for="age">Input your age (years):</label>
+                    <input type="number" id="age" name="age" required>
+                    <label for="hear">How did you hear about us?</label>
+                    <select name="hear" id="hear" form="hear">
+                        <option value="">--Select--</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="Ig">Instagram</option>
+                        <option value="others">Others</option>
+                    </select>    
+                    <label for="bio">Provide a bio:</label>
+                    <textarea name="bio" id="bio" placeholder="I like coding..."></textarea>
+                </div>
+                <div class="footers">
+                    <label for="">
+                        <input type="checkbox">  I accept the <span class="under">terms and conditions</span>
+                    </label>
+                </div>
+
+                <button class="submit">Submit</button>
             </form>
         </div>
-        <hr>
-        <span>Account type (required)</span>
-        <div class="account_type">
-            <label for="">
-                 <input type="radio" name="availability" id="Personal" class="personal">
-                 Personal
-            </label>
 
-            <label for="">
-                  <input type="radio" name="availability" id="Business" class="business">   
-                  Business
-            </label>
-        </div>
-        <hr>
     </div>
 </body>
 
