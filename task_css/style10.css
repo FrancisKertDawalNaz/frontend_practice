@@ -1,50 +1,90 @@
-body{
-    scroll-behavior: smooth;
-    margin: 0;
-    font-family:'Poppins', Arial, Helvetica, sans-serif;
+/* Reset / Base */
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  background: #f5f5f5; /* ✅ added: light background */
+  color: #333; /* ✅ modern readable text color */
 }
 
-.main-header{
-    background-color: gray;
-    height: 60px;
-    width: 100%;
+/* Header */
+.main-header {
+  background-color: #333; /* ✅ changed: dark modern navbar */
+  position: sticky; /* ✅ modern: sticks on scroll */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* ✅ added: stay above content */
 }
 
-.nav{
+/* Navigation Container */
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
-  padding: 0 20px;
+  padding: 0 30px; /* ✅ better spacing */
+  height: 70px; /* ✅ consistent height */
 }
 
-.link ul{
-    display: flex;
-    justify-content: right;
-    gap: 40px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* Logo */
+.logo {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff; /* ✅ modern: white logo text */
+  letter-spacing: 1px; /* ✅ added: modern spacing */
 }
 
-.logo{
-    font-size: 20px;
-    font-weight: 600;
-    color: burlywood;
-    text-decoration: none;
+/* Nav Links */
+.link ul {
+  display: flex;
+  gap: 25px; /* ✅ more balanced spacing */
+  list-style: none;
+  margin: 0; /* ✅ reset */
+  padding: 0; /* ✅ reset */
 }
 
-.link a{
-    text-decoration: none;
+.link li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ddd; /* ✅ lighter gray */
+  padding: 8px 12px;
+  border-radius: 6px; /* ✅ modern rounded hover */
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-.link a:hover{
-    color: green;
+.link li a:hover {
+  background: #555; /* ✅ hover bg */
+  color: #fff; /* ✅ hover text */
 }
 
+/* Home Section */
+.home {
+  background: linear-gradient(135deg, #222, #444); /* ✅ modern gradient */
+  color: white;
+  height: 100vh; /* ✅ full screen section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.home h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
 
+/* ✅ Responsive (for smaller screens) */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    padding: 15px;
+    height: auto;
+  }
 
-
-
-
+  .link ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+}
