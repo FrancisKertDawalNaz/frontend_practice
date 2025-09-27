@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyaa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="video">
+            <img class="sticker_heart" src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" alt="heart">
+        </div>
+    <div class="main-div">
+        <h1>Hi <span id="changingText">Eyaa.</span></h1>
+    </div>
+
+
+    <script>
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.classList.add("heart");
+            heart.innerHTML = "❤️";
+
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.fontSize = Math.random() * 20 + 15 + "px";
+            heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+
+            document.body.appendChild(heart);
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+
+        setInterval(createHeart, 500);
+
+        const words = ["Eyaa.", "Ang cute mo."];
+        let index = 0;
+        const span = document.getElementById("changingText");
+
+        setInterval(() => {
+            span.style.opacity = 0;
+            setTimeout(() => {
+                span.textContent = words[index];
+                span.style.opacity = 1;
+                index = (index + 1) % words.length;
+            }, 500);
+        }, 4000);
+    </script>
+</body>
+
+</html>
