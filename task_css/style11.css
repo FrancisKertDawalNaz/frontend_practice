@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: gray;
+    margin-top: 100px;
+}
+
+.container{
+    display: flex;
+    padding: 50px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    width: 40%;
+    height: 30vh;
+}
+
+.container-txt{
+    display: block;
+    justify-content: end;
+}
