@@ -1,0 +1,52 @@
+body{
+    padding: 0 auto;
+    margin: 0 auto;
+    background-color: blue;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.container{
+    justify-content: center;
+    margin-top: 50px;
+    padding: 25px;
+}
+
+.container h1{
+    color: rgb(156, 138, 37);
+    font-size: 50px;
+    text-shadow: 3px 2px 5px white;
+}
+
+.container span{
+    color: lightcoral;
+}
+
+.text span{
+    color: lightsteelblue;
+    font-size: 20px;
+}
+
+
+.text h3{
+    margin: 0;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.best{
+    color: lightskyblue;
+}
+
+.num h3{
+    padding: 10px;
+    font-size: 25px;
+    color: orange;
+}
+
+
+
+
+
